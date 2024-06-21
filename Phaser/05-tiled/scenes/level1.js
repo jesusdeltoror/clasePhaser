@@ -1,4 +1,5 @@
-import { Player } from "./componentes.js"
+import { Player } from "./player.js"
+import { Plataformas } from "./plataformas.js"
 
 export class Level1 extends Phaser.Scene{
     constructor(){
@@ -6,10 +7,14 @@ export class Level1 extends Phaser.Scene{
             key: "level1"
         })
         this.player = new Player(this)
+        this.Plataformas = new Plataformas(this)
     }
 
     preload(){
         this.load.image('fondo', '../assets/img/fondo/fondo.jpg')
+        
+        this.Plataformas.preload()
+        
         this.player.preload()
     }
 
@@ -17,10 +22,12 @@ export class Level1 extends Phaser.Scene{
         this.fondo = this.add.image(0, 0, 'fondo').setOrigin(0, 0)
         this.fondo.displayWidth = this.sys.game.config.width
         this.fondo.displayHeight = this.sys.game.config.height
-
-        //this.player.p
+                
+        this.Plataformas.create()
+        
         this.player.create()
-
+        
+        this.physics.add.collider(this.player.Player, this.Plataformas.layer1)
     }
 
     update(){
