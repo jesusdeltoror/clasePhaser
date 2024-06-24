@@ -1,5 +1,6 @@
 import { Player } from "./player.js"
 import { Plataformas } from "./plataformas.js"
+import { Items } from "./items.js"
 
 export class Level1 extends Phaser.Scene{
     constructor(){
@@ -8,6 +9,7 @@ export class Level1 extends Phaser.Scene{
         })
         this.player = new Player(this)
         this.Plataformas = new Plataformas(this)
+        this.Items = new Items(this)
     }
 
     preload(){
@@ -27,10 +29,18 @@ export class Level1 extends Phaser.Scene{
         
         this.player.create()
         
-        this.physics.add.collider(this.player.Player, this.Plataformas.layer1)
+        this.physics.add.collider(this.player.Player, this.Plataformas.layer1)//clision entre jugador y plataforma    
+    
+        this.physics.add.overlap(this.player.Player, this.Plataformas.coins, this.collectCoin, null, this);//overlap con las monedas
     }
 
     update(){
         this.player.update()
+        
+    }
+
+    collectCoin(player, coin){
+        coin.disableBody(true, true);
     }
 }
+

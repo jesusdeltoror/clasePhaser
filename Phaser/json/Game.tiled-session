@@ -7,6 +7,18 @@
     "expandedProjectPaths": [
     ],
     "fileStates": {
+        "Level1.json": {
+            "scale": 1.2186011904761904,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 344.2471608254976,
+                "y": 336.04103065087315
+            }
+        },
+        "Level1.json#patron1": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
     },
     "last.imagePath": "C:/Users/jesus/Desktop/clasePhaser/Phaser/assets/img/tilesets",
     "map.height": 42,
@@ -15,10 +27,12 @@
     "map.tileWidth": 16,
     "map.width": 43,
     "openFiles": [
+        "Level1.json"
     ],
     "project": "Game.tiled-project",
-    "property.type": "bool",
+    "property.type": "int",
     "recentFiles": [
+        "Level1.json"
     ],
     "tileset.embedInMap": true,
     "tileset.tileSize": {
