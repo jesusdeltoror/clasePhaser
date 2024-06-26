@@ -1,7 +1,15 @@
 export class Items {
     constructor(scene){
-        this.MyScene = scene
+        this.myScene = scene
         this.GlodMoneda = 0
+    }
+
+    preload(){
+        
+    }
+
+    create(){
+        
     }
 
     recolectaMonedas(data){

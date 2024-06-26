@@ -3,21 +3,28 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "Level1.json",
     "expandedProjectPaths": [
+        "."
     ],
     "fileStates": {
+        "": {
+            "scaleInEditor": 4
+        },
         "Level1.json": {
             "scale": 1.2186011904761904,
-            "selectedLayer": 1,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 344.2471608254976,
-                "y": 336.04103065087315
+                "x": 342.6059347905727,
+                "y": 334.39980461594826
             }
         },
         "Level1.json#patron1": {
-            "scaleInDock": 1,
+            "scaleInDock": 2,
             "scaleInEditor": 1
+        },
+        "Level1.json#patron2": {
+            "scaleInDock": 1
         }
     },
     "last.imagePath": "C:/Users/jesus/Desktop/clasePhaser/Phaser/assets/img/tilesets",
