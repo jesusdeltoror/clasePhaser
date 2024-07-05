@@ -13,10 +13,10 @@
         },
         "Level1.json": {
             "scale": 1.2186011904761904,
-            "selectedLayer": 2,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 342.6059347905727,
-                "y": 334.39980461594826
+                "x": 341.78532177311024,
+                "y": 333.5791915984858
             }
         },
         "Level1.json#patron1": {
@@ -37,7 +37,7 @@
         "Level1.json"
     ],
     "project": "Game.tiled-project",
-    "property.type": "int",
+    "property.type": "bool",
     "recentFiles": [
         "Level1.json"
     ],

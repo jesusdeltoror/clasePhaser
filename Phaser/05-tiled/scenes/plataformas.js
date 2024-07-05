@@ -37,7 +37,6 @@ export class Plataformas{
  
         //Obtenemos la capa Monedas
         this.coinsObj = this.map.getObjectLayer("Monedas").objects
-        this.coinsObj[0]
         
         //Creamos grupo de monedas
         this.coins = this.myScene.physics.add.group({
