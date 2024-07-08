@@ -355,6 +355,34 @@
                 {
                  "ellipse":true,
                  "height":18.8740994016364,
+                 "id":21,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"collision",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"name",
+                         "type":"string",
+                         "value":"rana"
+                        }, 
+                        {
+                         "name":"vida",
+                         "type":"int",
+                         "value":100
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":18.8740994016363,
+                 "x":791.113428559427,
+                 "y":501.682213440416
+                }, 
+                {
+                 "ellipse":true,
+                 "height":18.8740994016364,
                  "id":19,
                  "name":"",
                  "properties":[
@@ -387,7 +415,7 @@
          "y":0
         }],
  "nextlayerid":7,
- "nextobjectid":21,
+ "nextobjectid":22,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

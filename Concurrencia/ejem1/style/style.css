@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: grid;
+    gap: 2rem;
+}
+
+header{
+    height: 90vh;
+    background-image: url("../../assets/img/star_wars_wallpaper_crait_by_chrisp96_dc1tbmw.png");
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+nav{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content:space-around;
+    position: fixed;
+    background-color: #E2E3E0;
+}
+nav>a{
+    text-decoration: none;
+    background-color: rgb(71, 71, 71);
+    color: rgb(240, 240, 240);
+    font-family: "Monday";
+    height: 4rem;
+    width: 8rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 0 2rem rgb(63, 63, 62);
+    cursor: pointer;
+    transition: .5s ease;
+}
+nav>a:hover{
+    background-color: black;
+}
+nav>a:active{
+    background-color: rgb(143, 142, 142);
+}
+
+header>h1{
+    font-family: "Lovely";
+    font-size: 5rem;
+    text-align: center;
+}
+section{
+    margin: 2rem;
+    height: 80vh;
+    background-color: #FDFEF8;
+    box-shadow: 0 0 3rem 1rem black inset, 0 0 3rem 2rem black inset;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Monday";
+    font-size: 1.5rem;
+}
+.data, .visual{
+    display: grid;
+    place-content: center;
+}
+section h1{
+    text-align: center;
+}
+.img{
+    border-radius: 2rem;
+    height: 30rem;
+    width: 30rem;
+    background-size: cover;
+}
+.Def{
+    background-image: url("../../assets/img/just_low_poly__by_pyxartz_da72vz4.jpg");  
+}
+.DefP{
+    background-image: url("../../assets/img/473647_chip_cpu_electronics_hardware_microchip_icon.png");  
+}
+.ejmS{
+    background-color: aquamarine;
+    height: 10rem;
+    width: 10rem;
+    display: grid;
+    place-content: center;
+    font-size: 2rem;
+}
+.ejmSW{
+    background-color: aquamarine;
+    height: 10rem;
+    width: 10rem;
+    display: grid;
+    place-content: center;
+    font-size: 2rem;
+}
+.ejmC{
+    background-color: blue;
+    height: 10rem;
+    width: 10rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1fr;
+}
+.ejemplo{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.ejemplo>div{
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+button{
+    display: inline;
+    height: 5rem;
+    width: 15rem;
+    font-size: 2.5rem;
+    border: .3rem solid black;
+    border-radius: .5rem;
+    transition: .5s ease;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(.97);
+}
+
+@font-face {
+    font-family: "Lovely";
+    src: url("../../assets/fonts/Simply\ Lovely\ Sans.ttf");
+}
+@font-face {
+    font-family: "Monday";
+    src: url("../../assets/fonts/MondaySans.ttf");
+}
+
+@media(width < 600px){
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
