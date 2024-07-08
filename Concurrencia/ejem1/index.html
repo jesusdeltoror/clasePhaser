@@ -10,9 +10,9 @@
 <body>
     <header>
         <nav>
+            <a href="#">Inicio</a>
             <a href="#definicion">Definicion</a>
-            <a href="#definicionP">Definicion en Programacion</a>
-            <a href="#">texto</a>
+            <a href="#definicionP">Definicion de Concurrencia en Programacion</a>
             <a href="#ejemplos">Ejemplos</a>
         </nav>
         <h1>CONCURRENCIA</h1>
@@ -30,10 +30,27 @@
     </section>
     <section id="definicionP">
         <div class="data">
-            <h1>Definicion en Programacion</h1>
+            <h1>Definicion de Concurrencia en Programacion</h1>
             <p>
-                Acción de coincidir distintas personas, sucesos, privilegios o cosas en un mismo lugar o tiempo.
+                La concurrencia en JavaScript se refiere a la capacidad de ejecutar múltiples tareas de manera simultánea o en paralelo para mejorar la eficiencia y el rendimiento. JavaScript utiliza un modelo de concurrencia basado en eventos, principalmente a través de su event loop (bucle de eventos) 
             </p>
+            <h2>Event Loop</h2>
+            <p>El event loop es un mecanismo que permite a JavaScript realizar operaciones no bloqueantes, a pesar de ser un lenguaje de un solo hilo. Funciona de la siguiente manera:</p>
+            <ul>
+                <li>
+                    <b>Call Stack (Pila de Llamadas):</b>
+                    Donde se ejecuta el código. Es una estructura de datos LIFO (Last In, First Out).
+                </li>
+                <li>
+                    <b>Task Queue (Cola de Tareas):</b>
+                    Donde se colocan las tareas que deben ejecutarse después de que el call stack esté vacío.
+                </li>
+                <li>
+                    <b>Microtask Queue (Cola de Microtareas):</b>
+                    Similar a la task queue, pero con una prioridad más alta. Aquí se colocan las microtareas, como las resoluciones de promises.
+                </li>
+            </ul>
+            <p>El event loop continuamente verifica si el call stack está vacío. Si está vacío, toma la primera tarea de la task queue o microtask queue y la coloca en el call stack para su ejecución.</p>
         </div>
         <div class="visual">
             <div class="img DefP"></div>

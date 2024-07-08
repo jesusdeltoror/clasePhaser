@@ -55,7 +55,7 @@ header>h1{
 }
 section{
     margin: 2rem;
-    height: 80vh;
+    min-height: 80vh;
     background-color: #FDFEF8;
     box-shadow: 0 0 3rem 1rem black inset, 0 0 3rem 2rem black inset;
     padding: 5rem;
@@ -84,7 +84,7 @@ section h1{
     background-image: url("../../assets/img/473647_chip_cpu_electronics_hardware_microchip_icon.png");  
 }
 .ejmS{
-    background-color: aquamarine;
+    background-color: rgb(182, 164, 1);
     height: 10rem;
     width: 10rem;
     display: grid;
@@ -92,7 +92,7 @@ section h1{
     font-size: 2rem;
 }
 .ejmSW{
-    background-color: aquamarine;
+    background-color: rgb(182, 104, 1);
     height: 10rem;
     width: 10rem;
     display: grid;
