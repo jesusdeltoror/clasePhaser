@@ -77,9 +77,9 @@ export class Player{
         })
 
         //Physics-------------------------------------------------
-        this.Player = this.myScene.physics.add.sprite(50,50, 'playerRunF1')
+        this.Player = this.myScene.physics.add.sprite(50,50, 'playerRunF1').setScale(1.2)
         this.Player.body.setSize(this.Player.width * 0.4, this.Player.height * 0.6);
-        this.Player.body.setOffset(this.Player.width * 0.3, this.Player.height * 0.1);
+        this.Player.body.setOffset(this.Player.width * 0.3, this.Player.height * 0.2);
         this.Player.setBounce(0.2);
         this.Player.setCollideWorldBounds(true);
         //Controles-----------------------------------------------

@@ -26,7 +26,7 @@ export class Level1 extends Phaser.Scene{
                 
         this.Plataformas.create()       
         this.player.create()
-        this.Enemigos.create()
+        this.Enemigos.create(this.player.Player)
 
         this.physics.add.collider(this.player.Player, this.Plataformas.layer1)//clision entre jugador y plataforma    
         this.physics.add.collider(this.Enemigos.enemies, this.Plataformas.layer1)    
@@ -35,7 +35,8 @@ export class Level1 extends Phaser.Scene{
 
     update(){
         this.player.update()
-        
+
+        this.Enemigos.data(this.player.Player, this.Enemigos.enemies)
     }
 
     collectCoin(player, coin){

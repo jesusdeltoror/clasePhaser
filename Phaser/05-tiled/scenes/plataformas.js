@@ -23,7 +23,7 @@ export class Plataformas{
         //animacion moneda
         this.myScene.anims.create({
             key: 'spin',
-            frames: this.myScene.anims.generateFrameNumbers('coin', { start: 0, end: 5 }),
+            frames: this.myScene.anims.generateFrameNumbers('coin', { start: 0, end: 4 }),
             frameRate: 10,
             repeat: -1
         });
